@@ -1,14 +1,15 @@
-/*	  Written by Shivansh Anand
- *    Algorithmic help and inspirations were taken from following pages : 
- *    1. https://en.wikipedia.org/wiki/Shunting-yard_algorithm
+/*     Written by Shivansh Anand
+ *     Algorithmic help and inspirations were taken from following pages : 
+ *     1. https://en.wikipedia.org/wiki/Shunting-yard_algorithm
  *     2. https://blog.devartis.com/how-i-used-the-visitor-pattern-to-solve-the-shunting-yard-algorithm-b269985a1af0
- *    3. https://stackoverflow.com/questions/40389749/infix-expression-to-binary-tree-in-c/40389942
+ *     3. https://stackoverflow.com/questions/40389749/infix-expression-to-binary-tree-in-c/40389942
  *        (however bin tree wasn't used)
  *
  *     How this works ?
- *     1. Tokenize the expresison(infix) into operands and operators
- *     2. Convert it info postfix expression
- *     3. Evaluate postfix
+ *	 1. Check for balanced paranthesis.
+ *	 2. Tokenize the expression into operands, operators, brackers etc.
+ *	 3. Convert the infix(human readable) expression to the postfix(computer friendly and easy to implement) form. This was done using Dijkstra's Shunting Yard algorithm. (more explanation here : https://en.wikipedia.org/wiki/Shunting-yard_algorithm)
+ *	 4. Evaluate the postfix expression. (more explanation here : https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/)
 */
 
 
